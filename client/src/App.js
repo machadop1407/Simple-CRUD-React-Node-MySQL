@@ -24,6 +24,7 @@ function App() {
       setEmployeeList([
         ...employeeList,
         {
+          id: JSON.parse(response.data.insertId)
           name: name,
           age: age,
           country: country,
